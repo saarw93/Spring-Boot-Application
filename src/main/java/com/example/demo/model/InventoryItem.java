@@ -5,12 +5,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "inventory")
+@ApiModel(description = "Provides details about each item in the inventory list")
 public class InventoryItem {
 
 	@Id
 	@GeneratedValue
+	@ApiModelProperty(notes = "An auto generated value for each item in the inventory list (I was not sure if I can refer the 'itemNo' property as an Identifier or not, so I use this id property)")
 	private Long id;
 	private String itemNo;
 	private String name;
