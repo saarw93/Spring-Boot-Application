@@ -1,0 +1,49 @@
+<div class="card my-5">
+    <h5 class="text-center">For Updating an existing item, you must provide the itemNo property</h5>
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit()" #itemForm="ngForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" [(ngModel)]="item.name" 
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter item name"
+                required #name="ngModel">
+            </div>
+            
+
+            <div class="form-group">
+              <label for="itemNo">itemNo</label>
+              <input type="text" [(ngModel)]="item.itemNo" 
+                class="form-control"
+                id="itemNo"
+                name="itemNo"
+                placeholder="Enter itemNo"
+                required #itemNo="ngModel">
+            </div>
+
+            <div class="form-group">
+              <label for="amount">Amount</label>
+              <input type="text" [(ngModel)]="item.amount" 
+                class="form-control"
+                id="amount"
+                name="amount"
+                placeholder="Enter item amount"
+                required #amount="ngModel">
+            </div>
+                 
+            <div class="form-group">
+              <label for="inventoryCode">InventoryCode</label>
+              <input type="text" [(ngModel)]="item.inventoryCode" 
+                class="form-control"
+                id="inventoryCode"
+                name="inventoryCode"
+                placeholder="Enter item inventoryCode"
+                required #inventoryCode="ngModel">
+            </div>
+                     
+            <button type="submit" class="btn btn-info">Submit</button>
+          </form>
+        </div>
+      </div>

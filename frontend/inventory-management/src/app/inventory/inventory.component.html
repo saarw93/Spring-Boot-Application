@@ -1,0 +1,28 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped text-center">
+        <thead class="thead-dark">
+        <tr>
+          <th>id</th>
+          <th>itemNo</th>
+          <th>name</th>
+          <th>amount</th>
+          <th>inventoryCode</th>
+          <th>increaseAmount</th>
+          <th>decreaseAmount</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of inventory">
+              <td>{{item.id}}</td>
+                <td>{{item.itemNo}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.amount}}</td>
+                <td>{{item.inventoryCode}}</td>
+                <td><button class="btn btn-success" (click)=increaseAmount(item.itemNo)>+1</button></td>
+                <td><button class="btn btn-danger" (click)=decreaseAmount(item.itemNo)>-1</button></td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

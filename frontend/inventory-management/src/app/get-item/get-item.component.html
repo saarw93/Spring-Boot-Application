@@ -1,0 +1,12 @@
+<div class="card my-5" id="item-form">
+        <div class="card-body"> 
+            <form (ngSubmit)="onSubmit(itemNo)" novalidate>
+                    <input id="itemNo" type="text" class="validate" [(ngModel)]="itemNo" name="itemNo" 
+                            class="form-control" placeholder="Enter itemNo">
+                    <!-- <div [hidden]="!itemNo.pristine" class="alert alert-danger">itemNo is required</div> -->
+                    <button class="btn btn-danger">Show item</button>
+                </form>
+         </div>
+</div>
+
+<div id="item-table"></div>

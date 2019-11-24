@@ -1,0 +1,9 @@
+<div class="card my-5">
+        <div class="card-body">
+            <form #it="ngForm" (ngSubmit)="onSubmit(id)" novalidate>
+                    <input id="id" type="text" class="validate" [(ngModel)]="id" name="id" 
+                            class="form-control" placeholder="Enter item id to delete">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+        </div>
+</div>
