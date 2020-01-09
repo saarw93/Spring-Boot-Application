@@ -1,5 +1,5 @@
 # Spring-Boot-Application
-Spring-boot application with a REST controller, which exposes a Swagger API catalog. An exercise of OpenLegacy Company
+Spring-boot application with a REST controller, which exposes a Swagger API catalog.
 
 This is a spring-boot application with a REST controller, which exposes a Swagger API catalog, and Angular frontend to use the APIs.
 The application exposes the following APIs:
